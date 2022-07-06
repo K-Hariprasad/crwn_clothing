@@ -10,12 +10,12 @@ import {
 } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 const firebaseConfig = {
-  apiKey: "AIzaSyAhSdiW4lhAP8TAhSq09svKz2J4fXBuebo",
-  authDomain: "crwn-clothing-705b6.firebaseapp.com",
-  projectId: "crwn-clothing-705b6",
-  storageBucket: "crwn-clothing-705b6.appspot.com",
-  messagingSenderId: "448388158366",
-  appId: "1:448388158366:web:74d571fdbb318fac6c3c8f",
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJ_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUC,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_M_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
 };
 
 export const app = initializeApp(firebaseConfig);
