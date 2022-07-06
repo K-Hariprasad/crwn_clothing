@@ -1,0 +1,17 @@
+.empty-cart-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4% auto;
+    span{
+        font-weight: 600;
+        letter-spacing: 1px;
+        color: rgb(104, 104, 104);
+    }
+    button{
+        width: 50%;
+        margin: 10px;
+        padding: 10px;
+        cursor: pointer;
+    }
+}
